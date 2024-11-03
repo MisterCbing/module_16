@@ -9,7 +9,7 @@ users = {'1': 'Имя: Example, возраст: 18'}
 async def get_all_users():
     return users
 
-@app.get('/users/{user_id}')
+@app.get('/user/{user_id}')
 async def get_user(user_id: str):
     return users[user_id]
 
